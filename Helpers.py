@@ -41,7 +41,7 @@ def prettifyFileSizes(size: str) -> str:
   exponent = min(int(math.log(size, 1024)), 5)
   quotient = float(size) / 1024 ** exponent
   unit = ["bytes", "kB", "MB", "GB", "TB", "PB"][exponent]
-  return "'{:.4f} {}'".format(quotient, unit)
+  return "{:.4f} {}".format(quotient, unit)
 
 
 
